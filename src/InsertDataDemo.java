@@ -8,13 +8,15 @@ import com.mysql.jdbc.PreparedStatement;
 import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 
 public class InsertDataDemo {
-	public static void main(String[] args) throws SQLException {
+	
+	public InsertDataDemo() throws SQLException{
+		
 		Connection connection = null;
 		Statement stmt = null;
 		
 		String stm = "DELETE FROM ALUMNES WHERE NOM = 'IZAN'";
 		
-		String stm2 = "INSERT INTO ALUMNES (NOM, DNI, DATA_NAIXEMENT, ADREÇA, CODI_POSTAL) VALUES('AYUWOKI', '6402849P', '1992-12-12', 'CARRER','43840')";
+		String stm2 = "INSERT INTO ALUMNES VALUES('fdsfsadf', '6482849P', '1992-12-12', 'CARRER',43840)";
 			
 		try
 		{
