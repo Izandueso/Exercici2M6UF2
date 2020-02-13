@@ -12,11 +12,10 @@ public class InsertDataDemo {
 		Connection connection = null;
 		Statement stmt = null;
 		
-		String stm = "INSERT INTO ALUMNES (DNI, NOM, DATA_NAIXEMENT, ADREÇA, CODI_POSTAL) VALUES('6472849P', 'IZAN', '1992-12-12', 'CARRER','43840')";
+		String stm = "DELETE FROM ALUMNES WHERE NOM = 'IZAN'";
 		
-		String stm2 = "INSERT INTO ALUMNES (DNI, NOM, DATA_NAIXEMENT, ADREÇA, CODI_POSTAL) VALUES('6402849P', 'ggggg', '1992-12-12', 'CARRER','43840')";
-		
-		
+		String stm2 = "INSERT INTO ALUMNES (NOM, DNI, DATA_NAIXEMENT, ADREÇA, CODI_POSTAL) VALUES('AYUWOKI', '6402849P', '1992-12-12', 'CARRER','43840')";
+			
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
